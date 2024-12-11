@@ -69,7 +69,7 @@ const About = () => {
       </AboutTitle>
       <AboutText>
         Platform for trading <AboutHighlight>PCG Slabs</AboutHighlight> rated 9,
-        9.5, &<AboutHighlight>10</AboutHighlight> minted on Neoxa
+        9.5, & <AboutHighlight>10</AboutHighlight> minted on Neoxa
       </AboutText>
     </AboutContainer>
   );
