@@ -51,6 +51,8 @@
 
 #### Contact
 
+- $25 fee per slab
+- Minimum claim = $x - slab fees ($25 per slab)
 - Small social media like links, but for Neoxa.app [exchange], Neoxa.net, premiercardgrading.com [pcg], and tcgtrader.com [trader]
 - Contact links need to be in a new tab and must be an ipfs gateway redirect.
 - IPFS .html code links can be found at src/ipfs/pcg.html, exchange.html, neoxa.html, and trader.html
