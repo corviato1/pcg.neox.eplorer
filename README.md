@@ -40,6 +40,13 @@
 
 #### About
 
+- Reactive font size
+- Title
+- One sentence explainer
+- One quote.
+- Quote text is 42% One sentence explainer text
+- Title is 58% larger than One sentene explainer text
+
 #### Highlights
 
 #### Contact
