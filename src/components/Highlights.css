@@ -1,0 +1,16 @@
+/* Styling for the Highlights Component */
+.highlights-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.highlights-container h1 {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.highlights-container p {
+  font-size: 1em;
+  color: #ddd;
+}
