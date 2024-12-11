@@ -95,6 +95,10 @@
 
 # Server side
 
+- host = Netlify
+
+# To Do
+
 # Commands ran
 
 - npx create-react-app <name>
