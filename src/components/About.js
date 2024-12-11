@@ -8,7 +8,7 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #000; /* Black background */
+  //z  background-color: #000; /* Black background */
   color: white; /* White text for contrast */
   min-height: 100vh;
   text-align: center;
@@ -20,11 +20,12 @@ const AboutContainer = styled.div`
 `;
 
 const AboutTitle = styled.h1`
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 42px;
+  margin-bottom: 1%;
+  margin-top: 1%;
   text-shadow: 0 0 80px rgb(192, 219, 255 / 75%),
     0 0 32px rgb(65, 120, 255 / 24%);
-  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  background: linear-gradient(to right, #debb68, #debb68);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -67,10 +68,9 @@ const About = () => {
         <span className="text-gradient">Real World Assets traded on web3</span>
       </AboutTitle>
       <AboutText>
-        This is a{" "}
-        <AboutHighlight>
-          PCG Slabs rated 9, 9.5, and 10s minted on Neoxa
-        </AboutHighlight>{" "}
+        Platform for trading <AboutHighlight>PCG Slabs</AboutHighlight> rated 9,
+        9.5, and
+        <AboutHighlight>10</AboutHighlight> minted on Neoxa
       </AboutText>
     </AboutContainer>
   );
