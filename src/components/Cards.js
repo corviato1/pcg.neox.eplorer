@@ -6,14 +6,14 @@ const Cards = () => {
   const cardsData = [
     {
       id: 1,
-      text: "Edit src/App.js and save to reload.",
+      text: "x",
       link: "X",
       linkText: "Xt",
       backgroundColor: "#ff9a9e", // Light pink
     },
     {
       id: 2,
-      text: "Edit src/App.js and save to reload.",
+      text: "X",
       link: "X",
       linkText: "X",
       backgroundColor: "#fad0c4", // Light peach
