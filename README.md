@@ -6,10 +6,17 @@
 
 # Mechanics
 
-- Multi url clones
-- Simple site
-- Third party exchagne
-- Inventory info
+## Multi url clones
+
+- https://pcgonneoxa.com/
+- https://pcgonneox.com/
+- https://pcgslabs.com/
+
+## Simple site
+
+## Third party exchagne
+
+## Inventory info
 
 ## Claim policy
 
