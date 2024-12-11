@@ -109,17 +109,18 @@
 
 ## Dashboard
 
-- Serves as backend remote access
-- Read only
-- Displays Stats _write full list_
+- Serves as backend remote access.
+- Read only.
+- Displays Stats. _write full list_
 
 # Backend stuff
 
 # Server side
 
-- host = Netlify
+# IPFS
 
-# To Do
+    - Open terminal.
+    - $ipfs daemon
 
 # Commands ran
 
