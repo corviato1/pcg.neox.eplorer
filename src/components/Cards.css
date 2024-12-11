@@ -32,15 +32,15 @@
 
 /* Specific Background Images for Cards */
 .card:nth-child(1) {
-  background-image: url("/img/cards/jeweled_lotus.jpg");
+  background-image: url("/public/img/cards/Past-Inventory.jpg");
 }
 
 .card:nth-child(2) {
-  background-image: url("/img/cards/pikachu_ex.jpg");
+  background-image: url("/public/img/cards/Current-Inventory.jpg");
 }
 
 .card:nth-child(3) {
-  background-image: url("/img/cards/dark_magician_girl.jpg");
+  background-image: url("/public/img/cards/Trade-Now.jpg");
 }
 
 /* Styling for Card Content */
