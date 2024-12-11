@@ -6,21 +6,21 @@ const Cards = () => {
   const cardsData = [
     {
       id: 1,
-      text: "x",
+      text: "Past Inventory",
       link: "X",
       linkText: "Xt",
       backgroundColor: "#ff9a9e", // Light pink
     },
     {
       id: 2,
-      text: "X",
+      text: "Current Inventory",
       link: "X",
       linkText: "X",
       backgroundColor: "#fad0c4", // Light peach
     },
     {
       id: 3,
-      text: "X",
+      text: "Trade Now",
       link: "https://reactjs.org",
       linkText: "X",
       backgroundColor: "#fbc2eb", // Light purple
