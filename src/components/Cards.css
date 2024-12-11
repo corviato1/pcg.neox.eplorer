@@ -5,7 +5,7 @@
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
-  background-color: #000; /* Black background for contrast */
+  background-color: transparent;
 }
 
 /* Styling for Each Card */
