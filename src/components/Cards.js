@@ -5,24 +5,24 @@ const Cards = () => {
   const cardsData = [
     {
       id: 1,
-      title: "Top",
-      subtitle: "Bottom",
-      link: "/past-inventory", // Subpage URL
-      backgroundImage: "/img/cards/Past-Inventory.jpg", // Correct relative path
+      title: "Past Inventory",
+      subtitle: "", // For later text
+      link: "/past-inventory",
+      backgroundImage: "/img/cards/Past-Inventory.jpg",
     },
     {
       id: 2,
-      title: "Top",
-      subtitle: "Bottom",
-      link: "/current-inventory", // Subpage URL
-      backgroundImage: "/img/cards/Current-Inventory.jpg", // Correct relative path
+      title: "Current Inventory",
+      subtitle: "", // For later text
+      link: "/current-inventory",
+      backgroundImage: "/img/cards/Current-Inventory.jpg",
     },
     {
       id: 3,
-      title: "Top",
-      subtitle: "Bottom",
-      link: "/trade-now", // Subpage URL
-      backgroundImage: "/img/cards/Trade-Now.jpg", // Correct relative path
+      title: "Trade Now",
+      subtitle: "", // For later text
+      link: "/trade-now",
+      backgroundImage: "/img/cards/Trade-Now.jpg",
     },
   ];
 
