@@ -89,7 +89,11 @@
 - App.css (contains landing page framework, and login framework)
 - Own page, and fractional display for landing page
 
-## x
+## Dashboard
+
+- Serves as backend remote access
+- Read only
+- Displays Stats _write full list_
 
 # Backend stuff
 
