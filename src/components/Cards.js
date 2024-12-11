@@ -7,22 +7,22 @@ const Cards = () => {
       id: 1,
       title: "Past Inventory",
       subtitle: "", // For later text
-      link: "/past-inventory",
-      backgroundImage: "/img/cards/Past-Inventory.jpg",
+      link: "/past-inventory", // Subpage URL
+      backgroundImage: "/img/cards/Past-Inventory.jpg", // Correct relative path
     },
     {
       id: 2,
       title: "Current Inventory",
       subtitle: "", // For later text
       link: "/current-inventory",
-      backgroundImage: "/img/cards/Current-Inventory.jpg",
+      backgroundImage: "/img/cards/Current-Inventory.jpg", // Correct relative path
     },
     {
       id: 3,
       title: "Trade Now",
       subtitle: "", // For later text
       link: "/trade-now",
-      backgroundImage: "/img/cards/Trade-Now.jpg",
+      backgroundImage: "/img/cards/Trade-Now.jpg", // Correct relative path
     },
   ];
 
