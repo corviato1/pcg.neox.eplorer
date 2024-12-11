@@ -1,14 +1,79 @@
 import React from "react";
-import "./About.css";
+import styled from "styled-components";
 
-const About = () => (
-  <div className="about-body">
-    <h1 style={{ fontSize: "2.58em" }}>Real World Assets traded on web3 </h1>
-    <p style={{ fontSize: "1em" }}>
-      PCG Slabs rated 9, 9.5, and 10s minted on Neoxa
-    </p>
-    <blockquote style={{ fontSize: "0.42em" }}>“This is the quote.”</blockquote>
-  </div>
-);
+// Styled Components
+const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #000; /* Black background */
+  color: white; /* White text for contrast */
+  min-height: 100vh;
+  text-align: center;
+
+  /* Responsive styling for mobile */
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+`;
+
+const AboutTitle = styled.h1`
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 80px rgb(192, 219, 255 / 75%),
+    0 0 32px rgb(65, 120, 255 / 24%);
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Responsive text size */
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5em;
+  }
+`;
+
+const AboutText = styled.p`
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+
+  /* Responsive text size */
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9em;
+  }
+`;
+
+const AboutHighlight = styled.span`
+  font-weight: bold;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+const About = () => {
+  return (
+    <AboutContainer>
+      <AboutTitle>
+        <span className="text-gradient">Real World Assets traded on web3</span>
+      </AboutTitle>
+      <AboutText>
+        This is a{" "}
+        <AboutHighlight>
+          PCG Slabs rated 9, 9.5, and 10s minted on Neoxa
+        </AboutHighlight>{" "}
+      </AboutText>
+    </AboutContainer>
+  );
+};
 
 export default About;
