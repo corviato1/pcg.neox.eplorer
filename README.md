@@ -90,3 +90,5 @@
 ## Commands ran
 
 - npx create-react-app <name>
+- npm install web-vitals
+- npm install styled-components
