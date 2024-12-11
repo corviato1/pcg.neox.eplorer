@@ -19,7 +19,7 @@
 
 .about-container blockquote {
   font-size: 0.42em;
-  color: #aaa;
+  color: hsl(0, 0%, 100%);
   font-style: italic;
 }
 
@@ -28,7 +28,7 @@
   margin-bottom: 20px;
   text-shadow: 0 0 80px rgb(192, 219, 255 / 75%),
     0 0 32px rgb(65, 120, 255 / 24%);
-  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  background: linear-gradient(to right, #d9ff00, #c43ad6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -21,7 +21,7 @@ const Cards = () => {
       id: 3,
       title: "Trade Now",
       subtitle: "", // For later text
-      link: "/trade-now",
+      link: "https://neoxa.app/",
       backgroundImage: "/img/cards/Trade-Now.jpg", // Correct relative path
     },
   ];
@@ -34,6 +34,8 @@ const Cards = () => {
           href={card.link}
           className="card"
           style={{ backgroundImage: `url(${card.backgroundImage})` }}
+          target={card.id === 3 ? "_blank" : "_self"}
+          rel={card.id === 3 ? "noopener noreferrer" : undefined}
         >
           <div className="card-content">
             <div className="card-title">{card.title}</div>
