@@ -7,22 +7,22 @@ const Cards = () => {
     {
       id: 1,
       text: "Edit src/App.js and save to reload.",
-      link: "https://reactjs.org",
-      linkText: "Learn React",
+      link: "X",
+      linkText: "Xt",
       backgroundColor: "#ff9a9e", // Light pink
     },
     {
       id: 2,
       text: "Edit src/App.js and save to reload.",
-      link: "https://reactjs.org",
-      linkText: "Learn React",
+      link: "X",
+      linkText: "X",
       backgroundColor: "#fad0c4", // Light peach
     },
     {
       id: 3,
       text: "Edit src/App.js and save to reload.",
       link: "https://reactjs.org",
-      linkText: "Learn React",
+      linkText: "X",
       backgroundColor: "#fbc2eb", // Light purple
     },
   ];
