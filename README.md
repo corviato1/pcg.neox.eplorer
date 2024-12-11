@@ -121,6 +121,8 @@
 
     - Open terminal.
     - $ipfs daemon
+    - Open new terminal
+    - $ <path to file> ipfs add -r <file name>.html
 
 # Commands ran
 
