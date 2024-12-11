@@ -92,7 +92,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 50%;
-  object-fit: cover;
+  object-position: 10%;
 }
 
 .contact-icon:hover {
