@@ -2,11 +2,14 @@
 
 - Slabs rated 9, 9.5, and 10 tokenized on web3
 
-# Platforms
+# Platforms leveraged
 
-# Mechanics
+- Neoxa
+- Netlify
+- TCG Player
+- Premier Card Grading
 
-## Multi url clones
+# Multi url clones
 
 - https://pcgonneoxa.com/
 - https://pcgonneox.com/
@@ -16,7 +19,15 @@
 
 ## Third party exchagne
 
-## Inventory info
+## Inventory information
+
+- List ins and outs of inventroy, and how to claim
+
+### features
+
+- Indexed [A to Z, Z to A, Viewed item high to low, viewed item low to high] search
+- Low profile carousel slider
+-
 
 ## Claim policy
 
