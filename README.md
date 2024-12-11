@@ -81,13 +81,13 @@
 - App.css (contains landing page framework, and login framework)
 - Own page, and fractional display for landing page
 
-##
+## x
 
 ##
 
 ##
 
-## Commands ran
+# Commands ran
 
 - npx create-react-app <name>
 - npm install web-vitals
