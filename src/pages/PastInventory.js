@@ -26,6 +26,7 @@ const PastInventory = () => {
   return (
     <div>
       <About />
+      <How />
       <Carousel />
       <Contact />
     </div>
