@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About";
+import How from "../components/How";
 import Contact from "../components/Contact";
 import styled from "styled-components";
 
@@ -25,6 +26,7 @@ const CurrentInventory = () => {
   return (
     <div>
       <About />
+      <How />
       <Carousel />
       <Contact />
     </div>
