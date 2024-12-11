@@ -20,7 +20,7 @@ const Cards = () => {
     },
     {
       id: 3,
-      text: "Edit src/App.js and save to reload.",
+      text: "X",
       link: "https://reactjs.org",
       linkText: "X",
       backgroundColor: "#fbc2eb", // Light purple

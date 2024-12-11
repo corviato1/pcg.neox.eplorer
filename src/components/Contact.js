@@ -10,7 +10,7 @@ const Contact = () => (
       <img
         src={`${process.env.PUBLIC_URL}/img/exchange.png`}
         alt="Exchange"
-        className="contact-image"
+        className="contact-icon"
       />
     </a>
     <a
@@ -21,7 +21,7 @@ const Contact = () => (
       <img
         src={`${process.env.PUBLIC_URL}/img/neoxa.png`}
         alt="Neoxa"
-        className="contact-image"
+        className="contact-icon"
       />
     </a>
     <a
@@ -32,7 +32,7 @@ const Contact = () => (
       <img
         src={`${process.env.PUBLIC_URL}/img/pcg.png`}
         alt="Premier Card Grading"
-        className="contact-image"
+        className="contact-icon"
       />
     </a>
     <a
@@ -43,7 +43,7 @@ const Contact = () => (
       <img
         src={`${process.env.PUBLIC_URL}/img/trader.png`}
         alt="Trader"
-        className="contact-image"
+        className="contact-icon"
       />
     </a>
   </div>
