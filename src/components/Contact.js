@@ -9,7 +9,7 @@ const Contact = () => (
       rel="noopener noreferrer"
     >
       <img
-        src={`${process.env.PUBLIC_URL}/img/exchange.png`}
+        src={`${process.env.PUBLIC_URL}/img/contact/exchange.png`}
         alt="Exchange"
         className="contact-icon"
       />
@@ -20,7 +20,7 @@ const Contact = () => (
       rel="noopener noreferrer"
     >
       <img
-        src={`${process.env.PUBLIC_URL}/img/neoxa.png`}
+        src={`${process.env.PUBLIC_URL}/img/contact/neoxa.png`}
         alt="Neoxa"
         className="contact-icon"
       />
@@ -31,7 +31,7 @@ const Contact = () => (
       rel="noopener noreferrer"
     >
       <img
-        src={`${process.env.PUBLIC_URL}/img/pcg.png`}
+        src={`${process.env.PUBLIC_URL}/img/contact/pcg.png`}
         alt="Premier Card Grading"
         className="contact-icon"
       />
@@ -42,7 +42,7 @@ const Contact = () => (
       rel="noopener noreferrer"
     >
       <img
-        src={`${process.env.PUBLIC_URL}/img/trader.png`}
+        src={`${process.env.PUBLIC_URL}/img/contact/trader.png`}
         alt="Trader"
         className="contact-icon"
       />
