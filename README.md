@@ -41,6 +41,11 @@
 
 # Pages
 
+- Home
+- Past Inventory
+- Current Inventory
+- Login
+
 ## Landing
 
 ### App.js
