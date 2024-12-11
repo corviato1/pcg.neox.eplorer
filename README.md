@@ -51,6 +51,10 @@
 
 #### Contact
 
+- Small social media like links, but for Neoxa.app [exchange], Neoxa.net, premiercardgrading.com, and tcgtrader.com
+- Contact links need to be in a new tab and must be an ipfs gateway redirect.
+- IPFS .html code links can be found at src/ipfs/pcg.html, exchange
+
 #### Login
 
 ### App.css (contains landing page framework, and login framework)
