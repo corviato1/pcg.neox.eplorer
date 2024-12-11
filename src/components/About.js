@@ -10,7 +10,7 @@ const AboutContainer = styled.div`
   padding: 20px;
   //z  background-color: #000; /* Black background */
   color: white; /* White text for contrast */
-  min-height: 100vh;
+  min-height: 7vh;
   text-align: center;
 
   /* Responsive styling for mobile */
@@ -56,7 +56,7 @@ const AboutText = styled.p`
 
 const AboutHighlight = styled.span`
   font-weight: bold;
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  background: linear-gradient(to right, #debb68, #debb68);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
@@ -69,8 +69,7 @@ const About = () => {
       </AboutTitle>
       <AboutText>
         Platform for trading <AboutHighlight>PCG Slabs</AboutHighlight> rated 9,
-        9.5, and
-        <AboutHighlight>10</AboutHighlight> minted on Neoxa
+        9.5, &<AboutHighlight>10</AboutHighlight> minted on Neoxa
       </AboutText>
     </AboutContainer>
   );
