@@ -10,12 +10,16 @@
 - Simple site
 - Third party exchagne
 - Inventory info
-- Claim policy
-- - USD pricing
-- - Total claim must exceed
-- - United States only
-- - KYC (Name, Address, Email, Phone)
-- - Each slab claimed comes with a unique asset as receipt
+
+## Claim policy
+
+- USD pricing.
+- Total claim must exceed $<>.
+- United States only.
+- KYC (Name, Address, Email, Phone).
+- Each slab claimed comes with a unique asset as receipt.
+- $25 fee per slab
+- Minimum claim = $x - slab fees ($25 per slab)
 
 # Pages
 
