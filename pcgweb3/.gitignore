@@ -22,10 +22,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Ignore specific files from your project
-pcgweb3/package-lock.json
-pcgweb3/package.json
-pcgweb3/public/favicon.ico
-pcgweb3/public/logo192.png
-pcgweb3/public/logo512.png
-pcgweb3/README.md
+# Ignore specific files in the src folder
+src/package-lock.json
+src/package.json
+src/public/favicon.ico
+src/public/logo192.png
+src/public/logo512.png
+src/README.md
