@@ -36,6 +36,7 @@
 - If screen width shrinks greater than 55%, switch to vertical card placement.
 - If mobile make card display default vertical.
 - Cards will have boarder, and slowly moving background glow.
+- Each card background is a different image
 
 #### About
 
