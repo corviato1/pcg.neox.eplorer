@@ -12,17 +12,18 @@
 .card {
   width: 300px;
   height: 400px;
-  border: 2px solid #fff; /* White border for contrast */
+  border: 2px solid #efbf04; /* White border for contrast */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-size: cover;
   background-position: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline for links */
+  color: white; /* Ensure text is visible over the background */
 }
 
 .card:hover {
@@ -30,37 +31,28 @@
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
 }
 
-/* Specific Background Images for Cards */
-.card:nth-child(1) {
-  background-image: url("/public/img/cards/Past-Inventory.jpg");
-}
-
-.card:nth-child(2) {
-  background-image: url("/public/img/cards/Current-Inventory.jpg");
-}
-
-.card:nth-child(3) {
-  background-image: url("/public/img/cards/Trade-Now.jpg");
-}
-
 /* Styling for Card Content */
-.card .App-header {
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   text-align: center;
-  color: #fff;
+  padding: 10px;
+}
+
+/* Title at the Top of the Card */
+.card-title {
+  margin-top: 10%;
+  font-size: 1.5em;
+  font-weight: bold;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
 }
 
-.card .App-logo {
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-.card .App-link {
-  color: #61dafb;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-.card .App-link:hover {
-  text-decoration: underline;
+/* Subtitle at the Bottom of the Card */
+.card-subtitle {
+  margin-bottom: 10%;
+  font-size: 1em;
+  font-style: italic;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }

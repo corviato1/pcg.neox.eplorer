@@ -1,55 +1,45 @@
 import React from "react";
-import logo from "../logo.svg";
-import "../App.css";
 import "./Cards.css";
 
 const Cards = () => {
   const cardsData = [
     {
       id: 1,
-      text: "Past Inventory",
-      link: "X",
-      linkText: "Xt",
-      backgroundColor: "#ff9a9e", // Light pink
+      title: "Top",
+      subtitle: "Bottom",
+      link: "/past-inventory", // Subpage URL
+      backgroundImage: "/img/cards/Past-Inventory.jpg", // Correct relative path
     },
     {
       id: 2,
-      text: "Current Inventory",
-      link: "X",
-      linkText: "X",
-      backgroundColor: "#fad0c4", // Light peach
+      title: "Top",
+      subtitle: "Bottom",
+      link: "/current-inventory", // Subpage URL
+      backgroundImage: "/img/cards/Current-Inventory.jpg", // Correct relative path
     },
     {
       id: 3,
-      text: "Trade Now",
-      link: "https://reactjs.org",
-      linkText: "X",
-      backgroundColor: "#fbc2eb", // Light purple
+      title: "Top",
+      subtitle: "Bottom",
+      link: "/trade-now", // Subpage URL
+      backgroundImage: "/img/cards/Trade-Now.jpg", // Correct relative path
     },
   ];
 
   return (
     <div className="cards-container">
       {cardsData.map((card) => (
-        <div
+        <a
           key={card.id}
+          href={card.link}
           className="card"
-          style={{ backgroundColor: card.backgroundColor }}
+          style={{ backgroundImage: `url(${card.backgroundImage})` }}
         >
-          <div className="App">
-            <header className="App-header">
-              <p>{card.text}</p>
-              <a
-                className="App-link"
-                href={card.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {card.linkText}
-              </a>
-            </header>
+          <div className="card-content">
+            <div className="card-title">{card.title}</div>
+            <div className="card-subtitle">{card.subtitle}</div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );
