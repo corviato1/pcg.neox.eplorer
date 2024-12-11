@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { getFeaturedCards } from "../data/cardPool";
+import { getFeaturedCards } from "../data/CardPool";
+
 // Styled Components
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: #000;
+  padding: 5px;
+  background-color: #white;
   color: white;
-  min-height: 100vh;
+  min-height: 10vh;
 `;
 
 const Title = styled.h1`
@@ -37,7 +38,7 @@ const CardGrid = styled.div`
 
 const Card = styled.div`
   position: relative;
-  background: white;
+  background: transparent;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
