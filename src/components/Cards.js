@@ -8,21 +8,21 @@ const Cards = () => {
       title: "Past Inventory",
       subtitle: "", // For later text
       link: "/past-inventory", // Subpage URL
-      backgroundImage: "/img/cards/Past-Inventory.jpg", // Correct relative path
+      backgroundImage: "/img/cards/Past-Inventory.jpg",
     },
     {
       id: 2,
       title: "Current Inventory",
       subtitle: "", // For later text
       link: "/current-inventory",
-      backgroundImage: "/img/cards/Current-Inventory.jpg", // Correct relative path
+      backgroundImage: "/img/cards/Current-Inventory.jpg",
     },
     {
       id: 3,
       title: "Trade Now",
       subtitle: "", // For later text
       link: "https://neoxa.app/",
-      backgroundImage: "/img/cards/Trade-Now.jpg", // Correct relative path
+      backgroundImage: "/img/cards/Trade-Now.jpg",
     },
   ];
 
