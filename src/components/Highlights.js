@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { getFeaturedCards } from "../data/CardPool";
+import { getFeaturedCards } from "../img/all-slabs";
 
 // Styled Components
 const Container = styled.div`
