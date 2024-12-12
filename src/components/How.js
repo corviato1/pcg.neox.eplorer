@@ -80,10 +80,10 @@ const How = () => {
       <Section>
         <SectionTitle>The Collection</SectionTitle>
         <SectionText>
-          Our platform offers a curated selection of professionally graded cards
-          (PCG slabs) from iconic trading card games: Magic: The Gathering
-          (MTG), Pokémon, and Yu-Gi-Oh! Each card is graded at 9, 9.5, or 10,
-          ensuring only top-tier collectibles are listed.
+          Our platform offers a curated selection of slabbed cards graded from P
+          remier Card Grading (PCG) of the iconic trading card games: Magic: The
+          Gathering (MTG), Pokémon, and Yu-Gi-Oh! Each card is graded at 9, 9.5,
+          or 10, ensuring only top-tier collectibles are listed.
         </SectionText>
       </Section>
 
@@ -91,14 +91,15 @@ const How = () => {
       <Section>
         <SectionTitle>NFT Marketplace</SectionTitle>
         <SectionText>
-          Every card is listed on our decentralized exchange (DEX) as a
+          Every card is listed on a decentralized exchange (DEX) as a
           non-fungible token (NFT). These NFTs can be:
         </SectionText>
         <List>
           <ListItem>Traded for platform currencies (or combinations).</ListItem>
           <ListItem>Swapped for other NFTs.</ListItem>
           <ListItem>
-            Exchanged using any combination of NFTs and platform currencies.
+            Exchanged using any combination of NFTs and platform currencies as a
+            basket.
           </ListItem>
         </List>
       </Section>
@@ -111,7 +112,7 @@ const How = () => {
           steps:
         </SectionText>
         <List>
-          <ListItem>Hold the NFT in their account.</ListItem>
+          <ListItem>Self host the NFT.</ListItem>
           <ListItem>
             Create a profile with Know Your Customer (KYC) verification.
           </ListItem>
