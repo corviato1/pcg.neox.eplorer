@@ -1,50 +1,60 @@
+// Import images from the src/components/img/all-slabs/ folder
+import blackLotus from "../components/img/all-slabs/black-lotus.jpg";
+import charizard from "../components/img/all-slabs/charizard.jpg";
+import blueEyes from "../components/img/all-slabs/blue-eyes.jpg";
+import timeWalk from "../components/img/all-slabs/time-walk.jpg";
+import pikachuIllustrator from "../components/img/all-slabs/pikachu-illustrator.jpg";
+import darkMagician from "../components/img/all-slabs/dark-magician.jpg";
+import moxPearl from "../components/img/all-slabs/mox-pearl.jpg";
+import blastoise from "../components/img/all-slabs/blastoise.jpg";
+import redEyes from "../components/img/all-slabs/Blue-Eyes White Dragon (Quarter Century Secret Rare) - 25th Anniversary Ultimate Kaiba Set (KC01)";
+
 // Pool of all available graded cards
 export const cardsPool = [
   {
     id: 1,
-    title:
-      "Dark Magician Girl - The Dark Side of Dimensions Movie Pack Gold Edition",
-    image:
-      "/img/all-slabs/Dark Magician Girl - The Dark Side of Dimensions Movie Pack Gold Edition (MVP1-ENG).jpg",
+    title: "MTG Black Lotus",
+    image: blackLotus,
   },
   {
     id: 2,
-    title: "Dark Magician Girl (2020) - The Lost Art Promotion",
-    image:
-      "/img/all-slabs/Dark Magician Girl (2020) - The Lost Art Promotion (LART).jpg",
+    title: "Pokemon Charizard",
+    image: charizard,
   },
   {
     id: 3,
-    title:
-      "Dark Magician Girl (Ghost Rare) - Ghosts From the Past The 2nd Haunting",
-    image:
-      "/img/all-slabs/Dark Magician Girl (Ghost Rare) - Ghosts From the Past The 2nd Haunting (GFP2).jpg",
+    title: "Yu-Gi-Oh! Blue Eyes White Dragon",
+    image: blueEyes,
   },
   {
     id: 4,
-    title:
-      "Dark Magician Girl the Dragon Knight (Alternate Art) (Blue) - Dragons of Legend The Complete Series",
-    image:
-      "/img/all-slabs/Dark Magician Girl the Dragon Knight (Alternate Art) (Blue) - Dragons of Legend The Complete Series (DLCS).jpg",
+    title: "MTG Time Walk",
+    image: timeWalk,
   },
   {
     id: 5,
-    title:
-      "Dark Magician Girl the Dragon Knight (Quarter Century Secret Rare) - Quarter Century Bonanza",
-    image:
-      "/img/all-slabs/Dark Magician Girl the Dragon Knight (Quarter Century Secret Rare) - Quarter Century Bonanza.jpg",
+    title: "Pokemon Pikachu Illustrator",
+    image: pikachuIllustrator,
   },
   {
     id: 6,
-    title: "Jeweled Lotus (Extended Art) - Commander Legends",
-    image:
-      "/img/all-slabs/Jeweled Lotus (Extended Art) - Commander Legends (CMR).jpg",
+    title: "Yu-Gi-Oh! Dark Magician",
+    image: darkMagician,
   },
   {
     id: 7,
-    title: "Pikachu ex - 238/191 - SV08 Surging Sparks",
-    image:
-      "/img/all-slabs/Pikachu ex - 238191 - SV08 Surging Sparks (SV08).jpg",
+    title: "MTG Mox Pearl",
+    image: moxPearl,
+  },
+  {
+    id: 8,
+    title: "Pokemon Blastoise",
+    image: blastoise,
+  },
+  {
+    id: 9,
+    title: "Yu-Gi-Oh! Red-Eyes Black Dragon",
+    image: redEyes,
   },
 ];
 
