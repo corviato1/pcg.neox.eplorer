@@ -8,7 +8,7 @@
 
 # exchange.html
 
-## hash: QmeySH9R9wDHfNfVGhVYNJTqBLBC3eJQENLuwx2UdApW6J
+## hash: QmRPLn4SEhmoPhZkLPazzAX6onJEG1B9h9sNC3GZ3ZFxSe
 
 ### Goes to: https://neoxa.app/
 
