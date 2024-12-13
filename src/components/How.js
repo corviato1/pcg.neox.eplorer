@@ -80,8 +80,7 @@ const How = () => {
       <Section>
         <SectionTitle>The Collection</SectionTitle>
         <SectionText>
-          Our platform offers a curated selection of slabbed cards graded from P
-          remier Card Grading (PCG) of the iconic trading card games: Magic: The
+          Our platform offers a curated selection of slabbed cards graded from Premier Card Grading (PCG) of the iconic trading card games: Magic: The
           Gathering (MTG), Pokémon, and Yu-Gi-Oh! Each card is graded at 9, 9.5,
           or 10, ensuring only top-tier collectibles are listed.
         </SectionText>
