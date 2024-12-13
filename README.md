@@ -1,4 +1,4 @@
-##### To Do
+## To Do
 - For How.js: with color change, new tab link "PCG" and "Premier Card Grading" to https://premiercardgrading.com/
 - For How.js: with color change, new tab link "The Gathering", "MTG", "Pokémon", and "Yu-Gi-Oh!", to https://pcgslabs.com/
 - For How.js: without color change, new tab link: "DEX", "NFT", and "Know Your Customer (KYC) verification", to https://pcgslabs.com/
