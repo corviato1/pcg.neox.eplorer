@@ -1,4 +1,5 @@
 ## To Do
+
 - For How.js: with color change, new tab link "PCG" and "Premier Card Grading" to https://premiercardgrading.com/
 - For How.js: with color change, new tab link "The Gathering", "MTG", "Pokémon", and "Yu-Gi-Oh!", to https://pcgslabs.com/
 - For How.js: without color change, new tab link: "DEX", "NFT", and "Know Your Customer (KYC) verification", to https://pcgslabs.com/
@@ -6,7 +7,7 @@
 - For How.js: review and rewrite text
 - For Contact.js: without color change, new tab link "NFTs" to https://pcgslabs.com/
 - For Contact.js: without color change, new tab link "PCG" to https://premiercardgrading.com/
-- For Contact.js: Change image for neoxa.app
+<!-- - For Contact.js: Change image for neoxa.app -->
 - Add components/RoadMap.js
 - For RoadMap.js: components within: current status, milestones & how to reach, white paper
 - Build out Login.js
