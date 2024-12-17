@@ -1,0 +1,185 @@
+1. Setup SQLite on Your Linux Server
+Install SQLite:
+
+bash
+Copy code
+sudo apt update
+sudo apt install sqlite3
+Verify installation:
+
+bash
+Copy code
+sqlite3 --version
+2. Create the Database
+Create the database file:
+
+bash
+Copy code
+sqlite3 shop.db
+Inside SQLite, create the users and cards tables:
+
+sql
+Copy code
+-- Table for users
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    email TEXT UNIQUE
+);
+
+-- Table for cards
+CREATE TABLE cards (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    description TEXT,
+    price REAL NOT NULL,
+    stock INTEGER NOT NULL,
+    image TEXT
+);
+
+.exit
+3. Populate the Cards Table
+Option A: Insert Data Manually
+Reopen the database:
+bash
+Copy code
+sqlite3 shop.db
+Insert the cards:
+sql
+Copy code
+INSERT INTO cards (id, name, description, price, stock, image)
+VALUES
+(1, 'Black Lotus (Scrye Magazine)', 'Scrye Magazine special edition.', 1000.00, 1, 'blackLotus.png'),
+(2, 'Blacker Lotus', 'A humorous parody card.', 500.00, 2, 'blackerLotus.png'),
+(3, 'Blastoise - Base Set (Shadowless)', 'Rare Pokémon card.', 300.00, 5, 'blastoise.png'),
+(4, 'Blue-Eyes White Dragon (Dark Duel Stories)', 'Iconic Yu-Gi-Oh! card from DDS.', 2000.00, 1, 'blueEyes.png'),
+(5, 'Blue-Eyes White Dragon (Quarter Century Secret Rare)', 'Yu-Gi-Oh! Quarter Century Rare.', 1500.00, 3, 'blueEyesSecret.png'),
+(6, 'Blue-Eyes White Dragon (Secret Pharaoh\'s Rare)', 'Yu-Gi-Oh! Pharaoh\'s Rare.', 1200.00, 4, 'blueEyesPharaoh.png');
+
+.exit
+Option B: Import from a CSV File
+Create a cards.csv file:
+
+csv
+Copy code
+id,name,description,price,stock,image
+1,Black Lotus (Scrye Magazine),Scrye Magazine special edition.,1000.00,1,blackLotus.png
+2,Blacker Lotus,A humorous parody card.,500.00,2,blackerLotus.png
+3,Blastoise - Base Set (Shadowless),Rare Pokémon card.,300.00,5,blastoise.png
+4,Blue-Eyes White Dragon (Dark Duel Stories),Iconic Yu-Gi-Oh! card from DDS.,2000.00,1,blueEyes.png
+5,Blue-Eyes White Dragon (Quarter Century Secret Rare),Yu-Gi-Oh! Quarter Century Rare.,1500.00,3,blueEyesSecret.png
+6,Blue-Eyes White Dragon (Secret Pharaoh's Rare),Yu-Gi-Oh! Pharaoh's Rare.,1200.00,4,blueEyesPharaoh.png
+Import into SQLite:
+
+bash
+Copy code
+sqlite3 shop.db <<EOF
+.mode csv
+.import cards.csv cards
+EOF
+4. Set Up the Backend with Flask
+Install Flask and SQLite:
+
+bash
+Copy code
+pip install flask flask-sqlalchemy
+Create the app.py file:
+
+python
+Copy code
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///shop.db'
+db = SQLAlchemy(app)
+
+# Models
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(120), nullable=False)
+    email = db.Column(db.String(120), unique=True)
+
+class Card(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(120), nullable=False)
+    description = db.Column(db.String(200))
+    price = db.Column(db.Float, nullable=False)
+    stock = db.Column(db.Integer, nullable=False)
+    image = db.Column(db.String(200))
+
+# Routes
+@app.route('/cards', methods=['GET'])
+def get_cards():
+    cards = Card.query.all()
+    return jsonify([{
+        'id': c.id, 'name': c.name, 'description': c.description,
+        'price': c.price, 'stock': c.stock, 'image': c.image
+    } for c in cards])
+
+@app.route('/users', methods=['POST'])
+def create_user():
+    data = request.json
+    user = User(username=data['username'], password=data['password'], email=data['email'])
+    db.session.add(user)
+    db.session.commit()
+    return jsonify({'message': 'User created!'}), 201
+
+if __name__ == '__main__':
+    db.create_all()  # Ensures tables are created
+    app.run(host='0.0.0.0', port=5000)
+Run the app:
+
+bash
+Copy code
+python app.py
+5. Frontend Integration
+Update your React frontend to fetch cards dynamically:
+
+javascript
+Copy code
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+const CardsComponent = () => {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/cards")
+      .then((response) => setCards(response.data))
+      .catch((error) => console.error("Error fetching cards:", error));
+  }, []);
+
+  return (
+    <div>
+      {cards.map((card) => (
+        <div key={card.id}>
+          <h2>{card.name}</h2>
+          <p>{card.description}</p>
+          <p>Price: ${card.price}</p>
+          <p>Stock: {card.stock}</p>
+          <img src={`/static/images/cards/${card.image}`} alt={card.name} />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default CardsComponent;
+Place your card images in a static/images/cards/ directory on the server.
+
+6. Serve Flask with Gunicorn + Nginx
+Install Gunicorn:
+
+bash
+Copy code
+pip install gunicorn
+Run the app with Gunicorn:
+
+bash
+Copy code
+gunicorn -w 4 -b 0.0.0.0:5000 app:app
+Configure Nginx to reverse proxy requests to Gunicorn.
+
