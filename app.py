@@ -1,14 +1,15 @@
+import os
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
-import os
 
 # Initialize Flask App
 app = Flask(__name__)
 CORS(app)  # Allow frontend requests (CORS policy)
 
 # SQLite Database Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///shop.db'
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(BASE_DIR, 'shop.db')}"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -51,8 +52,10 @@ def add_card():
     db.session.commit()
     return jsonify({'message': 'Card added successfully'}), 201
 
-# Initialize database
+# Ensure database is created at startup
+with app.app_context():
+    db.create_all()
+
+# Run the Flask app
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()  # Create tables
-    app.run()
+    app.run(debug=True)
