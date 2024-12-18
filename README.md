@@ -19,7 +19,10 @@
 
 
 ## Backend
-
+### Used for
+- User profile
+- Past inventory
+- Current inventory
 
 # About
 
