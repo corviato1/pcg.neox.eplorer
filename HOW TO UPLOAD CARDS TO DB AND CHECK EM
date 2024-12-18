@@ -1,0 +1,18 @@
+Fetch Cards:
+
+curl https://pcg-neox-explorer.onrender.com/cards
+
+
+
+
+Add a Card:
+
+curl -X POST https://pcg-neox-explorer.onrender.com/add-card \
+-H "Content-Type: application/json" \
+-d '{
+    "name": "Black Lotus",
+    "description": "Iconic trading card.",
+    "price": 999.99,
+    "stock": 3,
+    "image": "https://example.com/black-lotus.png"
+}'
