@@ -45,7 +45,7 @@
   justify-content: center;
   width: 100%; /* Optional: Adjust width for layout */
   margin: 0 auto; /* Centers the container horizontally */
-  border: 2px solid rgb(222 187 104)
+  border: 2px solid rgb(222 187 104); /* Blue border */
   border-radius: 10px; /* Optional: Rounded corners */
   padding: 20px; /* Spacing inside the container */
   box-sizing: border-box; /* Ensures padding does not affect width */
