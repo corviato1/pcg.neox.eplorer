@@ -15,6 +15,15 @@
 - Write pages/Claim.js
 - Update pages/CurrentInventory.js
 - Update pages/PastInventory.js
+- Write nft.html file for NFT IPFS hash.  Include, digitial image of card, image of the slab, basic bio of that specific card, claim process, date info
+- Connect backend
+
+
+## Backend
+### Used for
+- User profile
+- Past inventory
+- Current inventory
 
 # About
 
